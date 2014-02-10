@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:jsf="http://xmlns.jcp.org/jsf"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                template="layout.xhtml"
+                >
+    <ui:define name="contents">
+        <h1>Input - 01</h1>
+        <form jsf:id="form">
+            <label>First Name:</label><input type="text" jsf:value="#{simpleForm.user.firstName}" /><br />
+            <label>Last Name:</label><input type="text" jsf:value="#{simpleForm.user.lastName}" /><br />
+            <label>Age:</label><input type="text" jsf:value="#{simpleForm.user.age}" required="true"/><br />
+
+            <button jsf:action="step2">Next</button>
+        </form>
+    </ui:define>
+</ui:composition>
+
