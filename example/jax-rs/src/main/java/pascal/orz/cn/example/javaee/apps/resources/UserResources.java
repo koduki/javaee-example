@@ -5,8 +5,11 @@
  */
 package pascal.orz.cn.example.javaee.apps.resources;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import pascal.orz.cn.example.javaee.apps.model.User;
 import pascal.orz.cn.example.javaee.commons.annotations.ErrorLog;
 import pascal.orz.cn.example.javaee.commons.annotations.TimeLog;
 
@@ -17,13 +20,12 @@ import pascal.orz.cn.example.javaee.commons.annotations.TimeLog;
 @Path("/users")
 @TimeLog
 @ErrorLog
+@Consumes("application/json")
+@Produces("application/json")
 public class UserResources {
 
     @GET
-    public String list() {
-        if (1 == 1) {
-            throw new RuntimeException();
-        }
-        return "hello";
+    public User list() {
+        return new User();
     }
 }
