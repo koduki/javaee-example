@@ -7,6 +7,7 @@ package pascal.orz.cn.example.javaee.apps.resources;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import pascal.orz.cn.example.javaee.apps.model.User;
@@ -27,5 +28,10 @@ public class UserResources {
     @GET
     public User list() {
         return new User();
+    }
+
+    @POST
+    public User create(User user) {
+        return user;
     }
 }
