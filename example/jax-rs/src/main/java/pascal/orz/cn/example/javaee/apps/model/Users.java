@@ -5,11 +5,13 @@
  */
 package pascal.orz.cn.example.javaee.apps.model;
 
-import pascal.orz.cn.example.javaee.commons.annotations.TimeLog;
-import pascal.orz.cn.example.javaee.commons.annotations.ErrorLog;
 import pascal.orz.cn.example.javaee.commons.annotations.FirstOrLastRequired;
 import java.io.Serializable;
 import javax.inject.Named;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,11 +22,18 @@ import lombok.ToString;
  * @author koduki
  */
 @Named
-@TimeLog
-@ErrorLog
+@Entity
 @ToString
 @FirstOrLastRequired
-public class User implements Serializable {
+public class Users implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Getter
+    @Setter
+    private Long id;
 
     @Getter
     @Setter

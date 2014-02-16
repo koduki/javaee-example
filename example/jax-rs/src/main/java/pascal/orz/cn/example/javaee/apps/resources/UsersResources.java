@@ -5,12 +5,17 @@
  */
 package pascal.orz.cn.example.javaee.apps.resources;
 
+import java.util.List;
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.transaction.Transactional;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import pascal.orz.cn.example.javaee.apps.model.User;
+import pascal.orz.cn.example.javaee.apps.model.Users;
+import pascal.orz.cn.example.javaee.apps.model.UsersDao;
 import pascal.orz.cn.example.javaee.commons.annotations.ErrorLog;
 import pascal.orz.cn.example.javaee.commons.annotations.TimeLog;
 
@@ -21,17 +26,23 @@ import pascal.orz.cn.example.javaee.commons.annotations.TimeLog;
 @Path("/users")
 @TimeLog
 @ErrorLog
+@Transactional
 @Consumes("application/json")
 @Produces("application/json")
-public class UserResources {
+public class UsersResources {
+
+    @Inject
+    UsersDao usersDao;
 
     @GET
-    public User list() {
-        return new User();
+    public List<Users> list() {
+        return this.usersDao.findAll();
     }
 
     @POST
-    public User create(User user) {
+    public Users create(Users user) {
+        this.usersDao.create(user);
+
         return user;
     }
 }

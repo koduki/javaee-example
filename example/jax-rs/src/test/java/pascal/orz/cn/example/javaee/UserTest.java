@@ -5,7 +5,7 @@ package pascal.orz.cn.example.javaee;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import pascal.orz.cn.example.javaee.apps.model.User;
+import pascal.orz.cn.example.javaee.apps.model.Users;
 import java.util.Set;
 import javax.validation.ConstraintViolation;
 import org.junit.Test;
@@ -24,7 +24,7 @@ public class UserTest {
 
     @Test
     public void setFirstNameAndLastName_with_both_empty_are_Error() {
-//        User user = new User();
+//        Users user = new Users();
 //        user.setFirstName("");
 //        Set<ConstraintViolation<User>> violations = validate(user);
 //        assertThat(violations.size(), is(1));
@@ -36,12 +36,12 @@ public class UserTest {
 
     @Test
     public void setFirstName_with_null_is_Error() {
-        User user = new User();
+        Users user = new Users();
         user.setFirstName(null);
-        Set<ConstraintViolation<User>> violations = validate(user);
+        Set<ConstraintViolation<Users>> violations = validate(user);
         assertThat(violations.size(), is(1));
 
-        for (ConstraintViolation<User> violation : violations) {
+        for (ConstraintViolation<Users> violation : violations) {
             assertThat(violation.getMessage(), is("may not be empty2"));
         }
     }

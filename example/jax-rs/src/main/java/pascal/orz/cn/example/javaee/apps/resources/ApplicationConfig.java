@@ -29,7 +29,7 @@ public class ApplicationConfig extends Application {
      * out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(pascal.orz.cn.example.javaee.apps.resources.UserResources.class);
+        resources.add(pascal.orz.cn.example.javaee.apps.resources.UsersResources.class);
     }
 
 }
