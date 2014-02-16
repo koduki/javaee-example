@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pascal.orz.cn.example.javaee.commons.annotation;
+package pascal.orz.cn.example.javaee.commons.annotations;
 
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;
@@ -18,5 +18,5 @@ import javax.interceptor.InterceptorBinding;
 @Target({TYPE, METHOD})
 
 @Retention(RUNTIME)
-public @interface ErrorLog {
+public @interface TimeLog {
 }

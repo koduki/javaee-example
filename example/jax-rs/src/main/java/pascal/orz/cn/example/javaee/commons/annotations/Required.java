@@ -4,25 +4,26 @@
  * and open the template in the editor.
  */
 
-package pascal.orz.cn.example.javaee.commons.annotation;
+package pascal.orz.cn.example.javaee.commons.annotations;
 
-import pascal.orz.cn.example.javaee.commons.validator.FirstOrLastRequiredValidator;
+import pascal.orz.cn.example.javaee.commons.validators.RequiredValidator;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 import javax.validation.Constraint;
 
-import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
+import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import javax.validation.Payload;
-import pascal.orz.cn.example.javaee.commons.validator.FirstOrLastRequiredValidator;
+import pascal.orz.cn.example.javaee.commons.validators.RequiredValidator;
 
-@Target({ TYPE, ANNOTATION_TYPE })
+@Target({ METHOD,FIELD, ANNOTATION_TYPE})
 @Retention(RUNTIME)
-@Constraint(validatedBy={FirstOrLastRequiredValidator.class})
-public @interface FirstOrLastRequired {
+@Constraint(validatedBy={RequiredValidator.class})
+public @interface Required {
 
-    String message() default "may not be empty2";
+    String message() default "may not be empty";
 
     Class<?>[] groups() default {};
 

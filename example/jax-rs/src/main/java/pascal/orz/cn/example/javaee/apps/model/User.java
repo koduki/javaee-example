@@ -5,12 +5,11 @@
  */
 package pascal.orz.cn.example.javaee.apps.model;
 
-import pascal.orz.cn.example.javaee.commons.annotation.TimeLog;
-import pascal.orz.cn.example.javaee.commons.annotation.ErrorLog;
-import pascal.orz.cn.example.javaee.commons.annotation.FirstOrLastRequired;
+import pascal.orz.cn.example.javaee.commons.annotations.TimeLog;
+import pascal.orz.cn.example.javaee.commons.annotations.ErrorLog;
+import pascal.orz.cn.example.javaee.commons.annotations.FirstOrLastRequired;
 import java.io.Serializable;
 import javax.inject.Named;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;

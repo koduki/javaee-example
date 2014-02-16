@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pascal.orz.cn.example.javaee.commons.filter;
+package pascal.orz.cn.example.javaee.commons.filters;
 
 import pascal.orz.cn.example.javaee.commons.utils.ApplicationLogger;
 import java.io.IOException;

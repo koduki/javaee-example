@@ -10,7 +10,7 @@
     </context-param>
     <filter>
         <filter-name>AccessLogFilter</filter-name>
-        <filter-class>pascal.orz.cn.example.javaee.commons.filter.AccessLogFilter</filter-class>
+        <filter-class>pascal.orz.cn.example.javaee.commons.filters.AccessLogFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>AccessLogFilter</filter-name>
