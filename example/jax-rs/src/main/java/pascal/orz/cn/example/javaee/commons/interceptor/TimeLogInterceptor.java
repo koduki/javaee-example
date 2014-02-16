@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pascal.orz.cn.example.javaee;
+package pascal.orz.cn.example.javaee.commons.interceptor;
 
+import pascal.orz.cn.example.javaee.commons.utils.ApplicationLogger;
 import javax.inject.Inject;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
+import pascal.orz.cn.example.javaee.commons.annotation.TimeLog;
 
 @TimeLog
 @Interceptor

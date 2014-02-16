@@ -3,8 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pascal.orz.cn.example.javaee;
+package pascal.orz.cn.example.javaee.apps.model;
 
+import pascal.orz.cn.example.javaee.commons.annotation.TimeLog;
+import pascal.orz.cn.example.javaee.commons.annotation.ErrorLog;
+import pascal.orz.cn.example.javaee.commons.annotation.FirstOrLastRequired;
 import java.io.Serializable;
 import javax.inject.Named;
 import javax.validation.constraints.NotNull;

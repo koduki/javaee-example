@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pascal.orz.cn.example.javaee;
+package pascal.orz.cn.example.javaee.commons.validator;
 
+import pascal.orz.cn.example.javaee.commons.annotation.Required;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 

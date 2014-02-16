@@ -5,13 +5,13 @@ package pascal.orz.cn.example.javaee;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import pascal.orz.cn.example.javaee.User;
+import pascal.orz.cn.example.javaee.apps.model.User;
 import java.util.Set;
 import javax.validation.ConstraintViolation;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.hamcrest.core.Is.*;
-import static pascal.orz.cn.example.javaee.TestUtils.*;
+import static pascal.orz.cn.example.javaee.commons.utils.TestUtils.*;
 
 /**
  *

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pascal.orz.cn.example.javaee;
+package pascal.orz.cn.example.javaee.commons.utils;
 
 import javax.inject.Inject;
 import javax.inject.Named;
