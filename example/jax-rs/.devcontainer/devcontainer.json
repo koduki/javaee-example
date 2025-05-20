@@ -1,0 +1,18 @@
+{
+  "name": "JavaEE with OpenJDK 8 (Docker Compose)",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  // The 'image' and 'features' properties are removed as Dockerfile and docker-compose.yml handle this.
+  // Payara installation is also handled by the Dockerfile.
+  "forwardPorts": [8080, 4848], // Still useful for VS Code to know which ports to forward from the service
+  "postCreateCommand": "mvn clean install", // This command will be executed in the 'app' service after creation
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "saoudrizwan.claude-dev",
+        "Payara.vscode-payara-tools"
+      ]
+    }
+  }
+}
