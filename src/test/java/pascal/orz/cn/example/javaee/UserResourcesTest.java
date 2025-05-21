@@ -7,9 +7,9 @@
 package pascal.orz.cn.example.javaee;
 
 import java.net.InetSocketAddress;
-import javax.ws.rs.core.UriBuilder;
-import javax.ws.rs.ext.RuntimeDelegate;
-import javax.xml.ws.spi.http.HttpHandler;
+import jakarta.ws.rs.core.UriBuilder;
+import jakarta.ws.rs.ext.RuntimeDelegate;
+import jakarta.xml.ws.spi.http.HttpHandler;
 
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.junit.After;
