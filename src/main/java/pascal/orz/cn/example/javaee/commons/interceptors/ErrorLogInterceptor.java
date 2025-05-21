@@ -6,10 +6,10 @@
 package pascal.orz.cn.example.javaee.commons.interceptors;
 
 import pascal.orz.cn.example.javaee.commons.utils.ApplicationLogger;
-import javax.inject.Inject;
-import javax.interceptor.AroundInvoke;
-import javax.interceptor.Interceptor;
-import javax.interceptor.InvocationContext;
+import jakarta.inject.Inject;
+import jakarta.interceptor.AroundInvoke;
+import jakarta.interceptor.Interceptor;
+import jakarta.interceptor.InvocationContext;
 import pascal.orz.cn.example.javaee.commons.annotations.ErrorLog;
 
 @ErrorLog

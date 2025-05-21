@@ -7,7 +7,7 @@ package pascal.orz.cn.example.javaee;
  */
 import pascal.orz.cn.example.javaee.apps.model.Users;
 import java.util.Set;
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.hamcrest.core.Is.*;

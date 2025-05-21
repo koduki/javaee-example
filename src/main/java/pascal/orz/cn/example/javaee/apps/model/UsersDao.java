@@ -7,12 +7,12 @@ package pascal.orz.cn.example.javaee.apps.model;
 
 import java.io.Serializable;
 import java.util.List;
-import javax.inject.Named;
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
-import javax.persistence.PersistenceContext;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.transaction.Transactional;
+import jakarta.inject.Named;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.Query;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.transaction.Transactional;
 import pascal.orz.cn.example.javaee.apps.model.exceptions.RollbackFailureException;
 import pascal.orz.cn.example.javaee.commons.annotations.ErrorLog;
 import pascal.orz.cn.example.javaee.commons.annotations.TimeLog;
