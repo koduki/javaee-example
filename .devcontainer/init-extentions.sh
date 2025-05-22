@@ -1,0 +1,2 @@
+mkdir -p /home/vscode/.cursor-server/data/User/globalStorage/payara.payara-vscode/
+cp /workspace/.devcontainer/ext-config/payara/servers.json /home/vscode/.cursor-server/data/User/globalStorage/payara.payara-vscode/servers.json

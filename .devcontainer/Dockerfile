@@ -36,7 +36,7 @@ ARG PAYARA_HOME=/opt/payara5
 RUN wget https://repo1.maven.org/maven2/fish/payara/distributions/payara/${PAYARA_VERSION}/payara-${PAYARA_VERSION}.zip -P /tmp && \
     unzip /tmp/payara-${PAYARA_VERSION}.zip -d /opt && \
     rm /tmp/payara-${PAYARA_VERSION}.zip
-
+RUN chown -R vscode /opt/payara5/
 # Switch back to vscode user (or create if not present in base, though devcontainer images usually have it)
 # The base image mcr.microsoft.com/devcontainers/java:bookworm should have a vscode user.
 USER vscode

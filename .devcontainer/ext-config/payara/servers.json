@@ -1,0 +1,12 @@
+[
+    {
+        "type": "local",
+        "name": "payara5",
+        "path": "/opt/payara5",
+        "domainName": "domain1",
+        "username": "admin",
+        "password": "",
+        "jdkHome": "/usr/lib/jvm/msopenjdk-current",
+        "deployOption": "DEFAULT"
+    }
+]

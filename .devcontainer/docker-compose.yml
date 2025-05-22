@@ -1,17 +1,16 @@
 services:
   app:
     build:
-      context: . # Assumes Dockerfile is in the same directory as docker-compose.yml
+      context: .
       dockerfile: Dockerfile
     volumes:
-      # Mount the project root (one level up from .devcontainer) to /workspace in the container
       - ..:/workspace:cached
+      - /var/run/docker.sock:/var/run/docker.sock
     ports:
-      - "8080:8080" # Application port
-      - "4848:4848" # Payara admin console
-    # Keep the container running
+      - "8080:8080" 
+      - "4848:4848" 
+      - "4900:4900" 
+      - "3820:3820" 
+      - "3700:3700" 
+
     command: sleep infinity
-    # Environment variables can be set here if needed, e.g. for Payara
-    # environment:
-    #   - PAYARA_HOME=/opt/payara5
-    # user: vscode # Ensure commands run as vscode user, Dockerfile already switches to vscode
