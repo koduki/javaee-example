@@ -31,7 +31,7 @@ ENV MAVEN_HOME=/opt/maven
 ENV PATH=${MAVEN_HOME}/bin:${JAVA_HOME}/bin:${PATH}
 
 # Download and install Payara Server
-ARG PAYARA_VERSION=5.2022.5
+ARG PAYARA_VERSION=5.2021.10
 ARG PAYARA_HOME=/opt/payara5
 RUN wget https://repo1.maven.org/maven2/fish/payara/distributions/payara/${PAYARA_VERSION}/payara-${PAYARA_VERSION}.zip -P /tmp && \
     unzip /tmp/payara-${PAYARA_VERSION}.zip -d /opt && \

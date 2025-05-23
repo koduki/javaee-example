@@ -6,7 +6,7 @@
         "domainName": "domain1",
         "username": "admin",
         "password": "",
-        "jdkHome": "/usr/lib/jvm/msopenjdk-current",
+        "jdkHome": "/usr/lib/jvm/temurin-8-jdk-amd64",
         "deployOption": "DEFAULT"
     }
 ]

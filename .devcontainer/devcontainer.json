@@ -3,6 +3,7 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspace",
+  "forwardPorts": [8080, 4848],
   "postCreateCommand": ".devcontainer/init-extentions.sh", 
   "customizations": {
     "vscode": {
