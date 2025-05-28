@@ -6,11 +6,7 @@ services:
     volumes:
       - ..:/workspace:cached
       - /var/run/docker.sock:/var/run/docker.sock
-    ports:
-      - "8080:8080" 
-      - "4848:4848" 
-      - "4900:4900" 
-      - "3820:3820" 
-      - "3700:3700" 
-
+    environment:
+      - MEM_MAX_RAM_PERCENTAGE=75.0
+      - MEM_XSS=512k
     command: sleep infinity

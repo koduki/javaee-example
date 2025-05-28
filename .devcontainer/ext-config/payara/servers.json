@@ -2,11 +2,11 @@
     {
         "type": "local",
         "name": "payara5",
-        "path": "/opt/payara5",
+        "path": "/opt/payara/appserver",
         "domainName": "domain1",
         "username": "admin",
         "password": "",
-        "jdkHome": "/usr/lib/jvm/temurin-8-jdk-amd64",
+        "jdkHome": "/usr/lib/jvm/zulu8/",
         "deployOption": "DEFAULT"
     }
 ]

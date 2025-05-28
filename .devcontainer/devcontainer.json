@@ -4,7 +4,7 @@
   "service": "app",
   "workspaceFolder": "/workspace",
   "forwardPorts": [8080, 4848, 9009], // Added 9009 for debugging
-  "postCreateCommand": ".devcontainer/init-extentions.sh && /opt/payara5/bin/asadmin start-domain --debug domain1",
+  "postCreateCommand": ".devcontainer/init-extentions.sh", // && /opt/payara/appserver/bin/asadmin start-domain --debug domain1
   "customizations": {
     "vscode": {
       "extensions": [
