@@ -5,7 +5,7 @@
         "path": "/opt/payara/appserver",
         "domainName": "domain1",
         "username": "admin",
-        "password": "",
+        "password": "admin",
         "jdkHome": "/usr/lib/jvm/zulu8/",
         "deployOption": "DEFAULT"
     }
