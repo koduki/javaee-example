@@ -12,8 +12,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import javax.persistence.PersistenceContext;
 import javax.persistence.criteria.CriteriaQuery;
-import javax.transaction.Transactional;
-import pascal.orz.cn.example.javaee.apps.model.exceptions.RollbackFailureException;
 import pascal.orz.cn.example.javaee.commons.annotations.ErrorLog;
 import pascal.orz.cn.example.javaee.commons.annotations.TimeLog;
 
