@@ -6,8 +6,8 @@
 package pascal.orz.cn.example.javaee.commons.validators;
 
 import pascal.orz.cn.example.javaee.commons.annotations.Required;
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class RequiredValidator implements ConstraintValidator<Required, String> {
 

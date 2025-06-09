@@ -6,14 +6,14 @@
 package pascal.orz.cn.example.javaee.apps.resources;
 
 import java.util.List;
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.transaction.Transactional;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
+import jakarta.transaction.Transactional;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
 import pascal.orz.cn.example.javaee.apps.model.Users;
 import pascal.orz.cn.example.javaee.apps.model.UsersDao;
 import pascal.orz.cn.example.javaee.commons.annotations.ErrorLog;

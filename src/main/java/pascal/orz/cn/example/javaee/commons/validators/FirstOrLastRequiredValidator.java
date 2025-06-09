@@ -6,8 +6,8 @@
 package pascal.orz.cn.example.javaee.commons.validators;
 
 import pascal.orz.cn.example.javaee.commons.annotations.FirstOrLastRequired;
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 import pascal.orz.cn.example.javaee.apps.model.Users;
 
 public class FirstOrLastRequiredValidator implements ConstraintValidator<FirstOrLastRequired, Users> {

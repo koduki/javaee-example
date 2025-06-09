@@ -1,5 +1,5 @@
 # Use Payara Server Full as the base image
-ARG PAYARA_VERSION_TAG=5.2022.5
+ARG PAYARA_VERSION_TAG=6.2024.12-jdk21
 FROM payara/server-full:${PAYARA_VERSION_TAG}
 
 USER root
@@ -37,6 +37,10 @@ RUN useradd -m -s /bin/bash ${USERNAME} && \
 # Payara Server の標準ディレクトリの権限を vscode ユーザーに合わせる
 # Payara の標準ディレクトリ構成を利用し、必要な権限のみ調整
 RUN chown -R ${USERNAME}:${USERNAME} /opt/payara/
+
+# Set JAVA_HOME for JDK 21
+ENV JAVA_HOME=/opt/java/openjdk
+ENV PATH=${JAVA_HOME}/bin:${PATH}
 
 # Switch to vscode user
 USER ${USERNAME}
