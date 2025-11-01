@@ -15,7 +15,6 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import jakarta.validation.Payload;
-import pascal.orz.cn.example.javaee.commons.validators.FirstOrLastRequiredValidator;
 
 @Target({ TYPE, ANNOTATION_TYPE })
 @Retention(RUNTIME)
