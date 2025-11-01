@@ -12,7 +12,7 @@ jobs:
     
     strategy:
       matrix:
-        java: [ '8', '11', '17' ]
+        java: [ '17', '21' ]
     
     name: Build with Java ${{ matrix.java }}
     
@@ -36,7 +36,7 @@ jobs:
       run: mvn package
     
     - name: Upload WAR artifact
-      if: matrix.java == '8'
+      if: matrix.java == '21'
       uses: actions/upload-artifact@v4
       with:
         name: simple-javaee-war

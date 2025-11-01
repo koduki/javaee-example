@@ -1,5 +1,5 @@
 # Use Payara Server Full as the base image
-ARG PAYARA_VERSION_TAG=5.2022.5
+ARG PAYARA_VERSION_TAG=6.2024.10
 FROM payara/server-full:${PAYARA_VERSION_TAG}
 
 USER root

@@ -7,12 +7,12 @@ package pascal.orz.cn.example.javaee.apps.model;
 
 import pascal.orz.cn.example.javaee.commons.annotations.FirstOrLastRequired;
 import java.io.Serializable;
-import javax.inject.Named;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.Size;
+import jakarta.inject.Named;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
