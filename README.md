@@ -19,7 +19,7 @@
 
 ## 技術スタック
 
-- Java 17 (LTS)
+- Java 21 (LTS)
 - Jakarta EE 10 (Web Profile)
 - Maven 3.6+
 - JPA 3.1 (EclipseLink 4.0)
@@ -49,7 +49,7 @@ src/main/java/
 
 ### 前提条件
 
-- JDK 17以上
+- JDK 21以上
 - Maven 3.6+
 - Jakarta EE 10互換のアプリケーションサーバー（例：GlassFish 7+、WildFly 27+、Payara 6+）
 
