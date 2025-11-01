@@ -6,13 +6,13 @@
 package pascal.orz.cn.example.javaee.apps.resources;
 
 import java.util.Set;
-import javax.ws.rs.core.Application;
+import jakarta.ws.rs.core.Application;
 
 /**
  *
  * @author koduki
  */
-@javax.ws.rs.ApplicationPath("resources")
+@jakarta.ws.rs.ApplicationPath("resources")
 public class ApplicationConfig extends Application {
 
     @Override
