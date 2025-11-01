@@ -19,16 +19,16 @@
 
 ## 技術スタック
 
-- Java 17 (Java 8互換モードで実行)
-- JavaEE 7 (Web Profile)
+- Java 17 LTS（Java 21対応準備済み）
+- Jakarta EE 10 (Web Profile)
 - Maven 3.6+
-- JPA 2.1 (EclipseLink 2.5)
-- JAX-RS 2.0
-- CDI 1.1
-- Bean Validation 1.1
-- Log4j2 2.0
+- JPA 3.0 (EclipseLink 4.0)
+- JAX-RS 3.1
+- CDI 4.0
+- Bean Validation 3.0
+- Log4j2 2.23.1
 - Lombok 1.18.30
-- JUnit 4.11
+- JUnit 4.13.2
 
 ## プロジェクト構造
 
@@ -49,11 +49,11 @@ src/main/java/
 
 ### 前提条件
 
-- JDK 17（推奨）またはJDK 8以上
+- JDK 17以上（JDK 21推奨）
 - Maven 3.6+
-- JavaEE 7互換のアプリケーションサーバー（例：GlassFish 4.0+、WildFly 8+、Payara 5+）
+- Jakarta EE 10互換のアプリケーションサーバー（例：GlassFish 7.0+、WildFly 27+、Payara 6+）
 
-**注意**: このプロジェクトはJava 17で開発およびテストされています。`.java-version`ファイルで指定されたバージョンを使用することを推奨します。
+**注意**: このプロジェクトはJakarta EE 10で開発されており、Java 17でコンパイル、Java 21で実行できます。`.java-version`ファイルで推奨バージョンを指定しています。
 
 ### プロジェクトのビルド
 
