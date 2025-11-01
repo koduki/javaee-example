@@ -21,14 +21,14 @@ This project showcases a modern JavaEE 7 application with RESTful web services, 
 
 - Java 8
 - JavaEE 7 (Web Profile)
-- Maven 3
-- JPA 2.1 (EclipseLink)
+- Maven 3.6+
+- JPA 2.1 (EclipseLink 2.5)
 - JAX-RS 2.0
 - CDI 1.1
 - Bean Validation 1.1
-- Log4j2
-- Lombok 1.18
-- JUnit 4
+- Log4j2 2.0
+- Lombok 1.18.30
+- JUnit 4.11
 
 ## Project Structure
 
@@ -50,8 +50,8 @@ src/main/java/
 ### Prerequisites
 
 - JDK 8 or higher
-- Maven 3.x
-- A JavaEE 7 compatible application server (e.g., GlassFish 4, WildFly, Payara)
+- Maven 3.6+
+- A JavaEE 7 compatible application server (e.g., GlassFish 4.0+, WildFly 8+, Payara 4+)
 
 ### Building the Project
 
@@ -120,4 +120,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details
+This project is licensed under the MIT License - see the LICENSE file for details.
