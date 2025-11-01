@@ -19,7 +19,7 @@
 
 ## 技術スタック
 
-- Java 8
+- Java 17 (Java 8互換モードで実行)
 - JavaEE 7 (Web Profile)
 - Maven 3.6+
 - JPA 2.1 (EclipseLink 2.5)
@@ -49,9 +49,11 @@ src/main/java/
 
 ### 前提条件
 
-- JDK 8以上
+- JDK 17（推奨）またはJDK 8以上
 - Maven 3.6+
-- JavaEE 7互換のアプリケーションサーバー（例：GlassFish 4.0+、WildFly 8+、Payara 4+）
+- JavaEE 7互換のアプリケーションサーバー（例：GlassFish 4.0+、WildFly 8+、Payara 5+）
+
+**注意**: このプロジェクトはJava 17で開発およびテストされています。`.java-version`ファイルで指定されたバージョンを使用することを推奨します。
 
 ### プロジェクトのビルド
 
