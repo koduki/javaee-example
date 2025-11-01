@@ -17,6 +17,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     software-properties-common \
     && rm -rf /var/lib/apt/lists/*
 
+# Install Java 25
+ARG JAVA_VERSION=25
+RUN wget https://download.oracle.com/java/25/latest/jdk-25_linux-x64_bin.tar.gz -P /tmp && \
+    mkdir -p /opt/java && \
+    tar xf /tmp/jdk-25_linux-x64_bin.tar.gz -C /opt/java && \
+    rm /tmp/jdk-25_linux-x64_bin.tar.gz && \
+    ln -s /opt/java/jdk-25 /opt/java/current
+ENV JAVA_HOME=/opt/java/current
+ENV PATH=${JAVA_HOME}/bin:${PATH}
 
 # Install Maven
 ARG MAVEN_VERSION=3.9.6
