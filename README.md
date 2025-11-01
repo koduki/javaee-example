@@ -1,23 +1,23 @@
-# JavaEE Example Project
+# JavaEE サンプルプロジェクト
 
-A comprehensive JavaEE 7 web application demonstrating best practices and common patterns for enterprise Java development.
+エンタープライズJava開発のベストプラクティスと一般的なパターンを示す包括的なJavaEE 7 Webアプリケーションです。
 
-## Overview
+## 概要
 
-This project showcases a modern JavaEE 7 application with RESTful web services, JPA persistence, custom validation, and comprehensive logging. It's designed as a learning resource and reference implementation for building enterprise Java web applications.
+このプロジェクトは、RESTful Webサービス、JPA永続化、カスタムバリデーション、包括的なロギングを備えた最新のJavaEE 7アプリケーションを紹介します。エンタープライズJava Webアプリケーションを構築するための学習リソースおよびリファレンス実装として設計されています。
 
-## Features
+## 機能
 
-- **RESTful API**: JAX-RS based REST endpoints for user management
-- **JPA/EclipseLink**: Entity persistence with JPA 2.1 and EclipseLink
-- **Bean Validation**: Custom validators including cross-field validation
-- **CDI**: Dependency injection with Context and Dependency Injection
-- **Logging**: Structured logging with Log4j2
-- **Lombok**: Reduced boilerplate with Lombok annotations
-- **Custom Annotations**: Reusable aspects like @TimeLog and @ErrorLog
-- **Access Logging**: HTTP request/response logging filter
+- **RESTful API**: ユーザー管理のためのJAX-RSベースのRESTエンドポイント
+- **JPA/EclipseLink**: JPA 2.1とEclipseLinkによるエンティティの永続化
+- **Bean Validation**: クロスフィールドバリデーションを含むカスタムバリデーター
+- **CDI**: Context and Dependency Injectionによる依存性注入
+- **ロギング**: Log4j2による構造化ロギング
+- **Lombok**: Lombokアノテーションによるボイラープレートの削減
+- **カスタムアノテーション**: @TimeLogや@ErrorLogなどの再利用可能なアスペクト
+- **アクセスログ**: HTTPリクエスト/レスポンスのロギングフィルター
 
-## Technologies
+## 技術スタック
 
 - Java 8
 - JavaEE 7 (Web Profile)
@@ -30,57 +30,57 @@ This project showcases a modern JavaEE 7 application with RESTful web services, 
 - Lombok 1.18.30
 - JUnit 4.11
 
-## Project Structure
+## プロジェクト構造
 
 ```
 src/main/java/
 ├── pascal/orz/cn/example/javaee/
     ├── apps/
-    │   ├── model/          # JPA entities and DAOs
-    │   └── resources/      # REST API endpoints
+    │   ├── model/          # JPAエンティティとDAO
+    │   └── resources/      # REST APIエンドポイント
     └── commons/
-        ├── annotations/    # Custom annotations
-        ├── filters/        # Servlet filters
-        ├── utils/          # Utility classes
-        └── validators/     # Custom validators
+        ├── annotations/    # カスタムアノテーション
+        ├── filters/        # サーブレットフィルター
+        ├── utils/          # ユーティリティクラス
+        └── validators/     # カスタムバリデーター
 ```
 
-## Getting Started
+## はじめに
 
-### Prerequisites
+### 前提条件
 
-- JDK 8 or higher
+- JDK 8以上
 - Maven 3.6+
-- A JavaEE 7 compatible application server (e.g., GlassFish 4.0+, WildFly 8+, Payara 4+)
+- JavaEE 7互換のアプリケーションサーバー（例：GlassFish 4.0+、WildFly 8+、Payara 4+）
 
-### Building the Project
+### プロジェクトのビルド
 
 ```bash
 mvn clean compile
 ```
 
-### Running Tests
+### テストの実行
 
 ```bash
 mvn test
 ```
 
-### Packaging
+### パッケージング
 
 ```bash
 mvn package
 ```
 
-This creates a WAR file in the `target/` directory that can be deployed to any JavaEE 7 compatible server.
+これにより、`target/`ディレクトリにWARファイルが作成され、任意のJavaEE 7互換サーバーにデプロイできます。
 
-## API Endpoints
+## APIエンドポイント
 
 ### Users API
 
-- `GET /api/users` - List all users
-- `POST /api/users` - Create a new user
+- `GET /api/users` - 全ユーザーの一覧を取得
+- `POST /api/users` - 新しいユーザーを作成
 
-Example request:
+リクエスト例：
 ```json
 {
   "firstName": "John",
@@ -89,11 +89,11 @@ Example request:
 }
 ```
 
-## Custom Validators
+## カスタムバリデーター
 
 ### @FirstOrLastRequired
 
-A cross-field validator ensuring that either firstName or lastName is provided:
+firstNameまたはlastNameのいずれかが提供されていることを保証するクロスフィールドバリデーター：
 
 ```java
 @FirstOrLastRequired
@@ -104,20 +104,20 @@ public class Users {
 }
 ```
 
-## Configuration
+## 設定
 
-- `src/main/resources/META-INF/persistence.xml` - JPA configuration
-- `src/main/resources/log4j2.xml` - Logging configuration
-- `src/main/webapp/WEB-INF/web.xml` - Web application configuration
+- `src/main/resources/META-INF/persistence.xml` - JPA設定
+- `src/main/resources/log4j2.xml` - ロギング設定
+- `src/main/webapp/WEB-INF/web.xml` - Webアプリケーション設定
 
-## Author
+## 作者
 
 koduki
 
-## Contributing
+## コントリビューション
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+コントリビューションを歓迎します！お気軽にプルリクエストを送ってください。
 
-## License
+## ライセンス
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+このプロジェクトはMITライセンスの下でライセンスされています。詳細はLICENSEファイルを参照してください。
