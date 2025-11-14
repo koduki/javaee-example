@@ -19,7 +19,7 @@
 
 ## 技術スタック
 
-- Java 8
+- Java 25
 - JavaEE 7 (Web Profile)
 - Maven 3.6+
 - JPA 2.1 (EclipseLink 2.5)
@@ -49,7 +49,7 @@ src/main/java/
 
 ### 前提条件
 
-- JDK 8以上
+- JDK 25以上
 - Maven 3.6+
 - JavaEE 7互換のアプリケーションサーバー（例：GlassFish 4.0+、WildFly 8+、Payara 4+）
 
